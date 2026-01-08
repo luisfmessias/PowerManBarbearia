@@ -32,7 +32,7 @@ export default defineConfig(({ mode }) => {
   }
 
   return {
-    base: '/PowerManBarbearia/', 
+    base: mode === 'production' ? '/PowerManBarbearia/' : '/', 
     plugins: [react()],
     build,
     esbuild,
