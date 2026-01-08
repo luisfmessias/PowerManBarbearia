@@ -2,7 +2,7 @@
 
 Uma landing page moderna e responsiva para a barbearia Power Man, desenvolvida com React, TypeScript, Tailwind CSS e Framer Motion.
 
-## ✂️ Componentes da Landing Page
+##  Componentes da Landing Page
 
 - **Header** - Navegação fixa com menu responsivo
 - **HeroSection** - Seção inicial com destaque visual
@@ -14,7 +14,7 @@ Uma landing page moderna e responsiva para a barbearia Power Man, desenvolvida c
 - **ContactSection** - Formulário de contato
 - **Footer** - Rodapé com informações
 
-## 🚀 Começando
+##  Começando
 
 ### Instalação
 
@@ -36,7 +36,7 @@ A aplicação estará disponível em `http://localhost:5173`
 npm run build
 ```
 
-## 📦 Dependências Principais
+##  Dependências Principais
 
 - **React 18.3** - Biblioteca UI
 - **React Router** - Roteamento
@@ -45,7 +45,7 @@ npm run build
 - **TypeScript** - Tipagem estática
 - **Vite** - Build tool moderno
 
-## 🎨 Features
+##  Features
 
 - Design moderno e responsivo
 - Animações fluidas com Framer Motion
@@ -53,6 +53,6 @@ npm run build
 - Menu mobile otimizado
 - Componentes reutilizáveis com TypeScript
 
-## 📝 Licença
+##  Licença
 
 Este projeto é proprietário da Power Man Barbearia.
