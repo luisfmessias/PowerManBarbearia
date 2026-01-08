@@ -53,6 +53,6 @@ npm run build
 - Menu mobile otimizado
 - Componentes reutilizáveis com TypeScript
 
-## 📝 Licença
+##  Licença
 
 Este projeto é proprietário da Power Man Barbearia.
