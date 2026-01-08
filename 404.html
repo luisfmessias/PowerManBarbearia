@@ -28,5 +28,37 @@
 
   <body>
     <div id="root"></div>
+    <script>
+      // Runtime error overlay for diagnosing white screen on GitHub Pages
+      function showErrorOverlay(message) {
+        try {
+          const existing = document.getElementById('runtime-error-overlay');
+          if (existing) existing.remove();
+          const d = document.createElement('div');
+          d.id = 'runtime-error-overlay';
+          d.style.position = 'fixed';
+          d.style.left = '0';
+          d.style.top = '0';
+          d.style.right = '0';
+          d.style.background = 'rgba(0,0,0,0.85)';
+          d.style.color = 'white';
+          d.style.zIndex = '999999';
+          d.style.padding = '16px';
+          d.style.fontFamily = 'monospace';
+          d.style.whiteSpace = 'pre-wrap';
+          d.textContent = 'Runtime error:\n' + message;
+          document.body.appendChild(d);
+        } catch (e) { console.error('Error showing overlay', e); }
+      }
+      window.addEventListener('error', function (ev) {
+        showErrorOverlay((ev && ev.error && ev.error.stack) || (ev && ev.message) || String(ev));
+      });
+      window.addEventListener('unhandledrejection', function (ev) {
+        showErrorOverlay((ev && ev.reason && ev.reason.stack) || (ev && ev.reason) || String(ev));
+      });
+      // Also log to console in case overlay can't render
+      window.addEventListener('error', function (ev) { console.error(ev && ev.error || ev); });
+      window.addEventListener('unhandledrejection', function (ev) { console.error(ev && ev.reason || ev); });
+    </script>
   </body>
 </html>
