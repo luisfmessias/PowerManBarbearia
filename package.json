@@ -1,11 +1,15 @@
 {
   "name": "power-man-barber",
+  "homepage": "https://luisfmessias.github.io/PowerManBarbearia",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "postbuild": "node scripts/copy-to-404.cjs",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "lint": "eslint .",
     "preview": "vite preview"
   },
@@ -28,6 +32,7 @@
     "eslint": "9.9.1",
     "eslint-plugin-react-hooks": "5.1.0-rc.0",
     "eslint-plugin-react-refresh": "0.4.11",
+    "gh-pages": "^5.0.0",
     "globals": "15.9.0",
     "postcss": "8.5.6",
     "tailwindcss": "3.4.17",
