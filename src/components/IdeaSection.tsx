@@ -2,6 +2,12 @@
 import React, { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import {ChevronLeft, ChevronRight, Star, Scissors} from 'lucide-react'
+import americano from '../img/cortes/americano.jpg'
+import fade from '../img/cortes/fade.jpg'
+import mullet from '../img/cortes/mullet.jpg'
+import social from '../img/cortes/social.jpg'
+import undercut from '../img/cortes/undercut.jpg'
+import buzz from '../img/cortes/buzz.jpg'
 
 interface HairstyleIdea {
   id: string
@@ -20,7 +26,7 @@ const IdeaSection: React.FC = () => {
       id: '1',
       name: 'Americano',
       description: 'Corte clássico americano com laterais curtas e topo volumoso. Perfeito para um visual elegante e profissional.',
-      image: './src/img/cortes/americano.jpg',
+      image: americano,
       popularity: 95,
       tags: ['Clássico', 'Profissional', 'Elegante']
     },
@@ -28,7 +34,7 @@ const IdeaSection: React.FC = () => {
       id: '2',
       name: 'Fade',
       description: 'Degradê moderno que vai do curto ao longo gradualmente. Versátil e sempre na moda.',
-      image: './src/img/cortes/fade.jpg',
+      image: fade,
       popularity: 98,
       tags: ['Moderno', 'Degradê', 'Versátil']
     },
@@ -36,7 +42,7 @@ const IdeaSection: React.FC = () => {
       id: '3',
       name: 'Mullet',
       description: 'Estilo retrô que voltou com força. Curto na frente e nas laterais, longo atrás.',
-      image: './src/img/cortes/mullet.jpg',
+      image: mullet,
       popularity: 85,
       tags: ['Retrô', 'Ousado', 'Moderno']
     },
@@ -44,7 +50,7 @@ const IdeaSection: React.FC = () => {
       id: '4',
       name: 'Social',
       description: 'Clássico com volume no topo e laterais bem aparadas. Estilo vintage sofisticado.',
-      image: './src/img/cortes/social.jpg',
+      image: social,
       popularity: 88,
       tags: ['Vintage', 'Sofisticado', 'Volume']
     },
@@ -52,7 +58,7 @@ const IdeaSection: React.FC = () => {
       id: '5',
       name: 'Undercut',
       description: 'Laterais e nuca raspadas com topo longo. Contraste marcante e visual impactante.',
-      image: './src/img/cortes/undercut.jpg',
+      image: undercut,
       popularity: 92,
       tags: ['Contraste', 'Impactante', 'Moderno']
     },
@@ -60,7 +66,7 @@ const IdeaSection: React.FC = () => {
       id: '6',
       name: 'Buzz Cut',
       description: 'Corte militar bem curto e uniforme. Prático, masculino e fácil de manter.',
-      image: './src/img/cortes/buzz.jpg',
+      image: buzz,
       popularity: 80,
       tags: ['Militar', 'Prático', 'Masculino']
     }

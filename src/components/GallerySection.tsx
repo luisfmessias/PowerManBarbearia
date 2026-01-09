@@ -1,6 +1,14 @@
 
 import React, { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import img1 from '../img/1.jpg'
+import img2 from '../img/2.jpg'
+import img3 from '../img/3.jpg'
+import img4 from '../img/4.jpg'
+import img5 from '../img/5.jpg'
+import img6 from '../img/6.jpg'
+import img7 from '../img/7.jpg'
+import img8 from '../img/8.jpg'
 
 const GallerySection: React.FC = () => {
   const [currentSet, setCurrentSet] = useState(0)
@@ -9,19 +17,19 @@ const GallerySection: React.FC = () => {
       id: 0,
       photos: [
         {
-          url: "./src/img/1.jpg",
+          url: img1,
           alt: "Corte masculino"
         },
         {
-          url: "./src/img/2.jpg",
+          url: img2,
           alt: "Corte masculino"
         },
         {
-          url: "./src/img/3.jpg",
+          url: img3,
           alt: "Corte masculino"
         },
         {
-          url: "./src/img/4.jpg",
+          url: img4,
           alt: "Corte masculino"
         }
       ]
@@ -30,19 +38,19 @@ const GallerySection: React.FC = () => {
       id: 1,
       photos: [
         {
-          url: "./src/img/5.jpg",
+          url: img5,
           alt: "Corte masculino"
         },
         {
-          url: "./src/img/6.jpg",
+          url: img6,
           alt: "Corte masculino e Barba"
         },
         {
-          url: "./src/img/7.jpg",
+          url: img7,
           alt: "Corte masculino"
         },
         {
-          url: "./src/img/8.jpg",
+          url: img8,
           alt: "Corte masculino"
         }
       ]

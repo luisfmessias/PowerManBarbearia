@@ -3,6 +3,7 @@ import React from 'react'
 import { MapPin, Phone, Clock, Instagram, Facebook } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Link, useLocation } from 'react-router-dom'
+import logo from '../img/logo.png'
 
 
 
@@ -16,7 +17,7 @@ const Footer: React.FC = () => {
             <Link to="/">
               <div className="logo-container perspective-1000 relative mb-7">
                 <motion.img
-                  src="./src/img/logo.png"
+                  src={logo}
                   alt="logo"
                   className="w-auto h-10 mr-10 drop-shadow-[0_0_20px_#a00303b7]"
                   animate={{ rotateY: [0, 180, 360], scale: [2.2] }} // escala a logo

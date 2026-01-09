@@ -1,6 +1,12 @@
 import React, { useState } from 'react' // Removi o useEffect daqui
 import { motion, AnimatePresence } from 'framer-motion'
 import { ChevronLeft, ChevronRight, Clock, DollarSign } from 'lucide-react'
+import corteBarba from '../img/corte-barba.jpg'
+import corteCabelo from '../img/corte-cabelo.jpg'
+import pezinho from '../img/pezinho.jpg'
+import corteSombrancelha from '../img/corte_sombrancelha.jpg'
+import hidratacao from '../img/hidratação.jpg'
+import desondulacao from '../img/desondulação.jpg'
 
 interface Service {
   _id: string
@@ -18,7 +24,7 @@ const ServicesSection: React.FC = () => {
       name: 'Barba',
       price: 40,
       duration: 30,
-      image: './src/img/corte-barba.jpg',
+      image: corteBarba,
       description: 'Corte e modelagem de barba com navalha e produtos premium. Inclui hidratação e finalização com óleos especiais.'
     },
     {
@@ -26,7 +32,7 @@ const ServicesSection: React.FC = () => {
       name: 'Cabelo',
       price: 45,
       duration: 30,
-      image: './src/img/corte-cabelo.jpg',
+      image: corteCabelo,
       description: 'Corte de cabelo masculino moderno com técnicas atuais. Inclui lavagem, corte e finalização profissional.'
     },
     {
@@ -34,7 +40,7 @@ const ServicesSection: React.FC = () => {
       name: 'Pezinho',
       price: 15,
       duration: 10,
-      image: './src/img/pezinho.jpg',
+      image: pezinho,
       description: 'Acabamento e contorno do pezinho com máquina e navalha. Perfeito para finalizar o visual.'
     },
     {
@@ -42,7 +48,7 @@ const ServicesSection: React.FC = () => {
       name: 'Sombrancelha',
       price: 15,
       duration: 15,
-      image: './src/img/corte_sombrancelha.jpg',
+      image: corteSombrancelha,
       description: 'Modelagem e limpeza de sobrancelhas para um visual mais definido e harmonioso.'
     },
     {
@@ -50,7 +56,7 @@ const ServicesSection: React.FC = () => {
       name: 'Hidratação',
       price: 20,
       duration: 10,
-      image: './src/img/hidratação.jpg',
+      image: hidratacao,
       description: 'Ajuda a tirar o aspecto de ressecamento , nutrindo , e recuperando brilho e maciez'
     },
     {
@@ -58,7 +64,7 @@ const ServicesSection: React.FC = () => {
       name: 'Desondulação',
       price: 100,
       duration: 60,
-      image: './src/img/desondulação.jpg',
+      image: desondulacao,
       description: 'Alinhamento dos fios, redução de volume sem perde a naturalidade dos fios.'
     },
   ]

@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
 import { useLocation, useNavigate } from 'react-router-dom'
+import logo from '../img/logo.png'
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -47,7 +48,7 @@ const Header: React.FC = () => {
             <button onClick={handleGoHome} className="focus:outline-none">
               <div className="logo-container perspective-1000 relative">
                 <motion.img
-                  src="./src/img/logo.png"
+                  src={logo}
                   alt="logo"
                   className="w-auto h-8 mr-8 drop-shadow-[0_0_20px_#a00303b7]"
                   animate={{ rotateY: [0, 180, 360], scale: [2.5] }}
