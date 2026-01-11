@@ -166,19 +166,6 @@ const ContactSection: React.FC = () => {
                   seu horário. Clientes com agendamento têm prioridade.
                 </p>
               </motion.div>
-
-              {/* CTA Button */}
-              <motion.button
-                className="w-full mt-6 bg-red-500 text-white py-3 px-6 rounded-lg font-semibold text-lg hover:bg-red-300 transition-colors duration-200"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.5 }}
-                viewport={{ once: true }}
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-              >
-                Agendar Agora
-              </motion.button>
             </div>
           </motion.div>
         </div>

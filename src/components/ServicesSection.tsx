@@ -44,8 +44,8 @@ const ServicesSection: React.FC = () => {
       description: 'Acabamento e contorno do pezinho com máquina e navalha. Perfeito para finalizar o visual.'
     },
     {
-      _id: 'sombrancelha',
-      name: 'Sombrancelha',
+      _id: 'sobrancelha',
+      name: 'Sobrancelha',
       price: 15,
       duration: 15,
       image: corteSombrancelha,
