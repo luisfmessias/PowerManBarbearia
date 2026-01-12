@@ -2,6 +2,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import {Award, Users, Star} from 'lucide-react'
+import fachada from '../img/fachada.jpg'
 
 const AboutSection: React.FC = () => {
   return (
@@ -18,7 +19,7 @@ const AboutSection: React.FC = () => {
           >
             <div className="relative overflow-hidden rounded-2xl shadow-2xl">
               <img 
-                src="./src/img/fachada.jpg" 
+                src={fachada}
                 alt="Interior da Barbearia POWER MAN"
                 className="w-full h-100 object-cover"
               />
